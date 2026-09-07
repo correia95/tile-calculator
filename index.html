@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="en-AU">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#0369a1" />
+
+    <title>Tile Calculator — how many tiles do I need for a floor or wall?</title>
+    <meta
+      name="description"
+      content="Work out how many tiles you need for a floor or wall. Enter the area or room size and the tile size, and get the tile count with grout gaps and wastage factored in, rounded up to whole boxes, plus rough adhesive and grout quantities. Metric, free, runs in your browser."
+    />
+    <link rel="canonical" href="https://tile-calculator.correia95.workers.dev/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Tile Calculator" />
+    <meta property="og:description" content="How many tiles for a floor or wall — with grout gaps, wastage, whole boxes, and adhesive & grout estimates." />
+    <meta property="og:url" content="https://tile-calculator.correia95.workers.dev/" />
+    <meta property="og:image" content="https://tile-calculator.correia95.workers.dev/og.svg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Tile Calculator" />
+    <meta name="twitter:description" content="How many tiles for a floor or wall — grout gaps, wastage, whole boxes." />
+    <meta name="twitter:image" content="https://tile-calculator.correia95.workers.dev/og.svg" />
+
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebApplication",
+        "name": "Tile Calculator",
+        "url": "https://tile-calculator.correia95.workers.dev/",
+        "applicationCategory": "UtilitiesApplication",
+        "operatingSystem": "Any",
+        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "AUD" },
+        "description": "Estimate the number of tiles for a floor or wall, allowing for grout joints and wastage, with adhesive and grout quantities."
+      }
+    </script>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I calculate how many tiles I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Divide the area to be tiled by the effective size of one tile, which is the tile size plus one grout joint on two sides. Then add a wastage percentage for cuts and breakages and round up to whole boxes. A 12 square metre floor in 600 by 600 tiles with 3 mm joints and 10 percent wastage needs about 37 tiles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much wastage should I allow for tiles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "About 10 percent for a straight lay in a square room, 15 percent for a diagonal lay or lots of cuts or large-format tiles, and 20 percent or more for herringbone and other complex patterns. Always keep a few spares from the same batch."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much tile adhesive and grout will I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Adhesive is roughly one 20 kg bag per 4 square metres with a 6 mm notched trowel. Grout use rises sharply as tiles get smaller: a 600 mm tile might use a quarter of a kilo per square metre while a mosaic uses several times that."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Does this work for wall tiles?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. Enter the wall area, which is height times length, and subtract windows and any area behind a vanity or bath that will not be tiled. Check the tiles-per-box figure on the actual wall tile as it differs from floor tiles."
+            }
+          }
+        ]
+      }
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+    <noscript>
+      <p style="text-align: center; padding: 20px">
+        This tile calculator needs JavaScript. Enter the area or room size and the tile size to get
+        the number of tiles, with grout gaps and wastage factored in, plus adhesive and grout
+        estimates.
+      </p>
+    </noscript>
+  </body>
+</html>

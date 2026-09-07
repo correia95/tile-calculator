@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0d1013" />
+  <g transform="translate(90 95)" fill="none" stroke="#38bdf8" stroke-width="3">
+    <rect x="0" y="0" width="130" height="130"/><rect x="145" y="0" width="130" height="130"/><rect x="290" y="0" width="130" height="130"/>
+    <rect x="0" y="145" width="130" height="130"/><rect x="145" y="145" width="130" height="130"/><rect x="290" y="145" width="130" height="130"/>
+    <rect x="0" y="290" width="130" height="130"/><rect x="145" y="290" width="130" height="130"/><rect x="290" y="290" width="130" height="130" fill="#38bdf8" opacity="0.2"/>
+  </g>
+  <text x="560" y="235" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="82" font-weight="800" fill="#e7eaef" letter-spacing="-1">Tile Calculator</text>
+  <text x="560" y="295" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="30" fill="#98a1ad">How many tiles for a floor or wall?</text>
+  <text x="560" y="365" font-family="ui-monospace, Menlo, Consolas, monospace" font-size="60" font-weight="800" fill="#38bdf8">37 tiles</text>
+  <text x="560" y="405" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="24" fill="#98a1ad">12 m² · 600×600 · 3 mm grout · 10% wastage · 10 boxes</text>
+  <text x="90" y="560" font-family="-apple-system, Segoe UI, Roboto, sans-serif" font-size="24" fill="#38bdf8">Grout gaps + wastage + adhesive &amp; grout estimates · no sign-up</text>
+</svg>
