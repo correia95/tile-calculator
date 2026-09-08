@@ -99,6 +99,34 @@ export const TILE_PRESETS: { label: string; w: number; h: number }[] = [
   { label: '800 × 800', w: 800, h: 800 },
 ];
 
-export const n1 = (n: number) => (Math.round(n * 10) / 10).toLocaleString('en-AU');
+export const n1 = (n: number) => (Math.round(n * 10) / 10).toLocaleString(undefined);
+
+// The optional cost estimate is shown in the viewer's local currency.
+const REGION_CCY: Record<string, string> = {
+  AU: 'AUD', US: 'USD', GB: 'GBP', CA: 'CAD', NZ: 'NZD', IN: 'INR', SG: 'SGD',
+  ZA: 'ZAR', JP: 'JPY', IE: 'EUR', DE: 'EUR', FR: 'EUR', ES: 'EUR', IT: 'EUR',
+  NL: 'EUR', BE: 'EUR', AT: 'EUR', PT: 'EUR', FI: 'EUR',
+};
+function localCurrency(): string {
+  try {
+    const langs =
+      typeof navigator !== 'undefined' && navigator.languages?.length
+        ? navigator.languages
+        : ['en-AU'];
+    for (const l of langs) {
+      let region: string | undefined;
+      try {
+        region = new Intl.Locale(l).maximize().region;
+      } catch {
+        region = (l.split('-')[1] || '').toUpperCase() || undefined;
+      }
+      if (region && REGION_CCY[region]) return REGION_CCY[region];
+    }
+  } catch {
+    /* ignore */
+  }
+  return 'AUD';
+}
+const CCY = localCurrency();
 export const money = (n: number) =>
-  n.toLocaleString('en-AU', { style: 'currency', currency: 'AUD', maximumFractionDigits: 0 });
+  n.toLocaleString(undefined, { style: 'currency', currency: CCY, maximumFractionDigits: 0 });
